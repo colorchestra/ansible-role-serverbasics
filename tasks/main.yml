@@ -1,0 +1,16 @@
+---
+- name: Set hostname
+  hostname:
+    name: "{{ inventory_hostname_short }}"
+
+- name: Install packages
+  import_tasks: apt.yml
+  tags: apt
+
+- name: Firewall settings
+  import_tasks: ufw.yml
+  tags: ufw
+
+- name: SSHD settings
+  import_tasks: sshd.yml
+  tags: sshd

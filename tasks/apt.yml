@@ -1,0 +1,24 @@
+---
+- name: apt dist-upgrade
+  apt:
+    upgrade: dist
+    update_cache: yes
+
+- name: Install basic software
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+    - tmux
+    - vim
+    - htop
+    - ufw
+
+- name: apt autoclean
+  apt:
+    autoclean: yes
+
+- name: apt autoremove
+  apt:
+    autoremove: yes

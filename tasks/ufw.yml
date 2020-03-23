@@ -1,0 +1,10 @@
+---
+- name: UFW - allow SSH 
+  ufw:
+    rule: allow
+    name: OpenSSH
+
+- name: UFW - Enable and set default policy
+  ufw:
+    state: enabled
+    policy: reject
