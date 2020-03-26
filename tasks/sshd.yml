@@ -10,7 +10,7 @@
   replace:
     path: /etc/ssh/sshd_config
     regexp: "^#? ?PasswordAuthentication yes"
-    line: "PasswordAuthentication no"
+    replace: "PasswordAuthentication no"
   notify: restart sshd
 
 - name: Disable X11 forwarding
