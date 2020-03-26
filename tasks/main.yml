@@ -2,6 +2,7 @@
 - name: Set hostname
   hostname:
     name: "{{ inventory_hostname_short }}"
+  tags: hostname
 
 - name: Install packages
   import_tasks: apt.yml
