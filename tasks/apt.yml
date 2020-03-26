@@ -10,10 +10,12 @@
     state: present
   vars:
     packages:
-    - tmux
-    - vim
+    - etckeeper
+    - git
     - htop
+    - tmux
     - ufw
+    - vim
 
 - name: apt autoclean
   apt:
