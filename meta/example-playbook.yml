@@ -1,0 +1,7 @@
+- hosts: example
+  remote_user: initialuser
+  become: yes
+  roles:
+    - serverbasics
+  vars:
+    - ssh_pubkey_url: https://example.com/my-ssh-key.pub
