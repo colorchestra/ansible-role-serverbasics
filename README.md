@@ -9,6 +9,9 @@ Add to your `requirements.yml`:
 ```
 Then do `ansible-galaxy install -r requirements.yml` and use the role in you playbook.
 
+### Required variables
+- `ssh_pubkey_url` must be set to the URL of an SSH public key
+
 ## Available tags
 - hostname
 - apt
