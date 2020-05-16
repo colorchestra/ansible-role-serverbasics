@@ -1,0 +1,11 @@
+---
+- name: Create backup directory
+  file:
+    path: /backup
+    state: directory
+
+- name: Copy prepare-backup.sh
+  copy:
+    src: prepare-backup.sh
+    dest: /backup/prepare-backup.sh
+    mode: '0750'

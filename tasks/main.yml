@@ -22,3 +22,8 @@
 - name: SSHD settings
   import_tasks: sshd.yml
   tags: sshd
+
+- name: Deploy Borgbackup requirements
+  import_tasks: borgbackup.yml
+  tags: borg backup borgbackup
+

@@ -17,8 +17,8 @@ Then do `ansible-galaxy install -r requirements.yml` and use the role in you pla
 - apt
 - ufw
 - sshd
+- borgbackup
 
 ## To do
-- Deploy Borgbackup
 - Deploy Vim config
 - Test / make compatible with all currently supported Debian and Ubuntu releases
