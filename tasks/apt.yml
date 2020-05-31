@@ -11,6 +11,7 @@
   vars:
     packages:
     - etckeeper
+    - dnsutils
     - git
     - htop
     - ntp
